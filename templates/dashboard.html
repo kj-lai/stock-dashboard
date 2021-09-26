@@ -1,8 +1,8 @@
 <!doctype html>
-<title>KLSE Fundamental Analysis by KJ</title>
+<title>STOCK Fundamental Analysis by KJ</title>
 <link rel=stylesheet type=text/css href="{{ url_for('static', filename='style.css') }}">
 <div class=page>
-	<h1>KLSE Fundamental Analysis</h1>
+	<h1>STOCK Fundamental Analysis</h1>
 	<form method="POST">
 		<input type="text" name="code" placeholder="Enter Stock Code">
 		<input type="text" name="ticker" placeholder="Enter Stock Ticker">
@@ -23,9 +23,11 @@
 	{{tables[3] | safe}}
 	<h2>{{titles[2]}}</h2>
 	{{tables[4] | safe}}
-	<br>
 	<h2>{{titles[3]}}</h2>
 	{{tables[5] | safe}}
+	<br>
+	<h2>{{titles[4]}}</h2>
+	{{tables[6] | safe}}
 	<br>
 	<br>
 	<!-- <h2>Graphs</h2> -->
